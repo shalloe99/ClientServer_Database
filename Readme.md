@@ -13,24 +13,21 @@ The project can be substantially decompose to three major sections:
 ### Installing
 
 1. download this repo:
-```
-git clone git@github.tamu.edu:choe/315-docker.git
-```
 2. install docker and run the daemon 
  * method may vary, depending on OS
  * see https://docs.docker.com/get-docker/
 3. install docker-compose 
  * method may vary, depending on OS
  * see https://docs.docker.com/compose/install/
-4. in the 315-docker directory, run:
+4. in the directory, run:
 ```
 docker-compose up -d
 ```
 5. now you can access the web server on http://localhost:5555
-6. Note: the web site root directory is 315-docker/public/ 
+6. Note: the web site root directory is ./public/ 
   * files in the above directory will be visible at http://localhost:5555
   * edits in your public/ directory in your host filesystem will immediately become visible on the web site.
-7. to stop and remove the instances from the docker runtime, run (in the top directory for 315-docker):
+7. to stop and remove the instances from the docker runtime, run (in the top directory of docker):
 ```
 docker-compose stop 
 ```
@@ -40,6 +37,7 @@ Credits: https://phpdocker.io/generator was used to seed this
 ### Executing program
 
 * How to run the program
+* cd to ./java directory
 ```
 cd java
 make
