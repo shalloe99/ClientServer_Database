@@ -1,0 +1,32 @@
+select 
+    count(*) as `# of Data points`, 
+    name, 
+    max(Quantity) as `MAX`,
+    min(Quantity) as `MIN`,
+    avg(Quantity) as `MEAN` 
+from 
+    productinventory
+
+////////////////////////////
+
+SET @rowindex := -1;
+ 
+SELECT
+   AVG(d.value) as Median 
+FROM
+   (SELECT @rowindex:=@rowindex + 1 AS rowindex,
+          productinventory.quantity AS value
+    FROM productinventory
+    ORDER BY productinventory.quantity) AS d
+WHERE
+d.rowindex IN (FLOOR(@rowindex / 2), CEIL(@rowindex / 2));
+
+///////////////////
+
+SELECT ROUND(quantity, -2)    AS bucket,
+       COUNT(*)                    AS COUNT,	
+RPAD('', LN(COUNT(*)), '*') AS bar,
+FROM   productinventory
+GROUP  BY bucket;
+
+select quantity from productinventory where quantity REGEXP '^-?[0-9]+$';
