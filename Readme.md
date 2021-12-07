@@ -1,236 +1,73 @@
-﻿
+# Project Title
 
-Start the code by:
+Simple overview of use/purpose.
 
-\--------------------
+## Description
 
-cd java
+An in-depth paragraph about your project and overview of use.
 
-make
+## Getting Started
 
-java Login
+### Dependencies
 
-\----------------------
+* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* ex. Windows 10
 
-Enter username: root
+### Installing
 
-Enter password: password
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-\-----------------------
+### Executing program
 
-Gui will pop up, and it is resizable. (click the edge and drag it outward)
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
 
-Example :
+## Help
 
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
 
+## Authors
 
+Contributors names and contact info
 
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-Testing by clicking the dropdown table opinion:
+## Version History
 
-jdb-show-related-tables <table-name>:
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
 
-Testcase 1:
+## License
 
-Customer
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-Then press send
+## Acknowledgments
 
-+++++++++++++
-
-Testcase 2:
-
-address
-
-Then press send
-
-\------------------------------------------------------
-
-jdb-show-all-primary-keys function :
-
-Then press send
-
-\------------------------------------------------------
-
-jdb-find-column <column-name>:
-
-Input:
-
-customerID
-
-\------------------------------------------------------
-
-jdb-search-path <table1> <table2>:
-
-Input:
-
-First table: address
-
-second table: customer
-
-
-
-
-
-\------------------------------------------------------
-
-jdb-search-and-join <table1> <table2>:
-
-Input:
-
-First table: address
-
-second table: customer
-
-(**this will run for a long time**)
-
-\------------------------------------------------------
-
-jdb-get-view <view-name> '(' < sql query > ')':
-
-**\*\*\*\*\*\*This will not create a table, if no error, then it is successfully created.**
-
-**If want to check if the view is created, please select see views \*\*\*\*\*\*\*\*\***
-
-Testcase 1:
-
-View name: CustomerView
-
-Sql query : select \* from address;
-
-+++++
-
-Testcase 2:
-
-View name: TestView
-
-Sql query : select \* from productinventory
-
-+++++
-
-Testcase 3:
-
-View name: JoinTestView4
-
-Sql query : select productinventory.ProductID, productinventory.Quantity, productinventory.Bin,
-
-product.Name, productNumber from productinventory left join product on
-
-(productinventory.ProductID = product.ProductID);
-
-\------------------------------------------------------
-
-jdb-stat <table> (or <view-name>) <column\_name>:
-
-Testcase 1:
-
-Table or view name: TestView
-
-Column name : Quantity
-
-Testcase 2:
-
-Table or view name: JoinTestView4
-
-Column name : Quantity
-
-\------------------------------------------------------
-
-jdb-slice <tableName> <index1> <index2>:
-
-Table name: customer
-
-Index1: 10
-
-Index 2: 20
-
-\------------------------------------------------------
-
-jdb-show-head <table name> <number of rows print out>:
-
-Table: address
-
-number of rows print out: 5
-
-**(if did not show up in the end, try closing some tab in front. It is pushed to the end)**
-
-\------------------------------------------------------
-
-jdb-product-to-where <city>:
-
-City: London
-
-
-
-
-
-\------------------------------------------------------
-
-jdb-info-of-subtotalitem <the first number of the ordering>:
-
-the first number of the ordering: 5
-
-\------------------------------------------------------
-
-jdb-delete-view <viewName>:
-
-**\*\*\*\*\*\*This will not create a table, if no error, then it is successfully deleted.**
-
-**If want to check if the view is deleted, please select see views \*\*\*\*\*\*\*\*\***
-
-viewName : TestView
-
-\------------------------------------------------------
-
-jdb-see-views:
-
-Then press send
-
-\------------------------------------------------------
-
-jdb-show-tables:
-
-Then press send
-
-\------------------------------------------------------
-
-jdb-draw:(bidirectional graph)
-
-Then press send
-
-\------------------------------------------------------
-
-jdb-join-table:
-
-Tables: salesreason, location, jobcandidate, department
-
-\------------------------------------------------------
-
-jdb-show-columns-of-a-table
-
-Testcase 1:
-
-Table name: address
-
-Column name (for all ) : \*
-
-+++++++++++++++++
-
-Testcase 2:
-
-Table name: address
-
-Column name : AddressID, City, AddressLine1, PostalCode
-
-\------------------------------------------------------
-
-Custom sql command:
-
-Sql: select \* from productinventory;
-
-\------------------------------------------------------
-
-Analytical Dahsboard:(xchart)
-
-Press send.
-
+Inspiration, code snippets, etc.
+1. BidirectionalTables-https://www.geeksforgeeks.org/graph-and-its-representations/
+2. SQLQueryjdb-stats-https://www.geeksforgeeks.org/calculate-median-in-mysql/
+3. DesignDocumentTemplate-
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKE wjxkI- 20L_sAhVJ2qwKHbgyAkMQFjATegQIChAC&url=https%3A%2F%2Fwww.cms.gov% 2Fresearch-statistics-data-and-systems%2Fcms-information- technology%2Fxlc%2Fdownloads%2Fsystemdesigndocument.docx%23%3A~%3At ext%3DThe%2520System%2520Design%2520Document%2520(SDD)%2520descri bes%2520how%2520the%2520functional%2520and%2Cdocumented%2520in%252 0the%2520Logical%2520Data&usg=AOvVaw0K6mjaN8CPeX1m6KaQlqZX
+4. DTBTablePrinter-https://github.com/htorun/dbtableprinter
+5. SQLTutorial-https://www.w3schools.com/sql/default.asp
+6. AdventureWorksSandbox-https://sqlzoo.net/wiki/AdventureWorks
+7. JavaSwingTutorial-https://www.youtube.com/watch?v=HXV3zeQKqGY&t=6619s
+8. jsplitpanel-https://stackoverflow.com/questions/1879091/jsplitpane- setdividerlocation-problem
+9. TabbedPanel-
+https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html
+10.Nested combination layout - https://stackoverflow.com/questions/5621338/how-to- add-jtable-in-jpanel-with-null- layout#:~:text=You%20can%20make%20use%20of,To%20add%20JTable%20to%2 0JPanel.&text=JPanel%20panel%20%3D%20new%20JPanel()%3B,add(scrollPane %2C%20BorderLayout.
+11.Result set to Array - https://stackoverflow.com/questions/20021139/converting- resultset-to-multidimensional-string-array
+12.Implementation of the close button in JPanel -
+https://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of- the-close-button
+13.Xchart implementation - https://knowm.org/open-source/xchart/xchart-example-code/
