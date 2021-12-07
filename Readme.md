@@ -1,6 +1,6 @@
-# Client-Server Database
+# Client-Server Database System
 
-A thorough design and experiment of
+A thorough design and experiment of the client-server database system.
 
 ## Description
 
