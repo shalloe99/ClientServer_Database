@@ -31,11 +31,11 @@ docker-compose up -d
 ```
 docker-compose stop 
 ```
-    
+
 Credits: https://phpdocker.io/generator was used to seed this 
 
 ### Executing program
-
+More instructions can be found on readme.pdf
 * How to run the program
 * cd to ./java directory
 ```
